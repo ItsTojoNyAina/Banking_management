@@ -50,24 +50,6 @@ class Filters extends BaseFilters
      *
      * @var array{before: list<string>, after: list<string>}
      */
-    public array $required = [
-        'before' => [
-            'forcehttps', // Force Global Secure Requests
-            'pagecache',  // Web Page Caching
-        ],
-        'after' => [
-            'pagecache',   // Web Page Caching
-            'performance', // Performance Metrics
-            'toolbar',     // Debug Toolbar
-        ],
-    ];
-
-    /**
-     * List of filter aliases that are always
-     * applied before and after every request.
-     *
-     * @var array<string, array<string, array<string, string>>>|array<string, list<string>>
-     */
     public array $globals = [
         'before' => [
             // 'honeypot',
@@ -79,6 +61,14 @@ class Filters extends BaseFilters
             // 'secureheaders',
         ],
     ];
+
+    /**
+     * List of filter aliases that are always
+     * applied before and after every request.
+     *
+     * @var array<string, array<string, array<string, string>>>|array<string, list<string>>
+     */
+   
   
     /**
      * List of filter aliases that works on a

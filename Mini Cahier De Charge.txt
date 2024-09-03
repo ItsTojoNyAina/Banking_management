@@ -1,0 +1,34 @@
+Cher Monsieur,
+
+Durant ce projet, j'ai rencontré plusieurs problèmes, notamment en ce qui concerne la connexion de mon code à la base de données. J'ai réalisé que je n'avais pas correctement vérifié ce que j'avais écrit dans mon fichier .env. Cela m'a pris presque deux heures, avec beaucoup de stress, pour comprendre que je devais simplement remplacer localhost par 127.0.0.1, et cela a résolu le problème.
+
+J'ai également rencontré des difficultés avec la gestion des routes. Parfois, j'oubliais de les définir, et d'autres fois, je les écrivais de manière incorrecte, ce qui entraînait des erreurs affichées sur l'interface.
+
+Malgré ces difficultés, ce projet m'a permis de développer mes compétences et d'améliorer mes capacités techniques. Il m'a offert une opportunité précieuse pour renforcer mes connaissances en gestion des bases de données et en configuration des routes.
+
+Cahier des charges du projet :
+
+    Objectif : Développer un système de gestion de compte bancaire avec les fonctionnalités suivantes :
+       Inscription , Connexion et déconnexion des utilisateurs
+        Gestion des dépôts et des retraits
+        Application et gestion des prêts
+        Affichage des informations de compte et des prêts en cours
+
+    Technologies utilisées :
+        Backend : CodeIgniter 4
+        Frontend : HTML, CSS, Bootstrap
+        Base de données : MySQL
+
+    Fonctionnalités clés :
+        Connexion utilisateur : Les utilisateurs peuvent se connecter en utilisant leur adresse email et mot de passe.
+        Gestion des dépôts : Les utilisateurs peuvent effectuer des dépôts dans leur compte.
+        Gestion des retraits : Les utilisateurs peuvent retirer des fonds de leur compte.
+        Application de prêt : Les utilisateurs peuvent demander des prêts, et le système vérifie les conditions et calcule les paiements mensuels.
+        Affichage des prêts : Les utilisateurs peuvent voir les détails de leurs prêts en cours, y compris le montant, le taux d'intérêt et la date d'échéance.
+
+    Exigences techniques :
+        Sécurité : Utilisation de CSRF tokens pour protéger les formulaires.
+        Validation des entrées : Vérification des données soumises par les utilisateurs pour garantir leur validité.
+        Gestion des erreurs : Mise en place d'une gestion efficace des erreurs pour une meilleure expérience utilisateur.
+
+En conclusion, bien que le projet ait présenté plusieurs défis, il m'a permis de renforcer mes compétences techniques et de mieux comprendre les aspects pratiques du développement d'applications web.

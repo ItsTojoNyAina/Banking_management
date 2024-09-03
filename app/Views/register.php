@@ -6,41 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-
     <title>Register</title>
+    <style>
+            .gradient-custom {
+        
+        background: #6a11cb; 
+        background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+        background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+        }
+    </style>
   </head>
   <body>
-    <div class="container">
-        <div class="row justify-content-md-center">
+    <section class="vh-100 gradient-custom">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+            <div class="card bg-dark text-white" style="border-radius: 1rem;">
+              <div class="card-body p-5">
 
-            <div class="col-6">
-                <h1>Sign Up</h1>
-                <?php if(isset($validation)):?>
+                <h2 class="fw-bold mb-2 text-uppercase">Sign Up</h2>
+                <p class="text-white-50 mb-5">Please enter your details to create an account!</p>
+
+                <?php if(isset($validation)): ?>
                     <div class="alert alert-danger"><?= $validation->listErrors() ?></div>
-                <?php endif;?>
+                <?php endif; ?>
+                
                 <form action="/register/save" method="post">
-                    <div class="mb-3">
-                        <label for="InputForName" class="form-label">Name</label>
-                        <input type="text" name="name" class="form-control" id="InputForName" value="<?= set_value('name') ?>">
-                    </div>
-                    <div class="mb-3">
-                        <label for="InputForEmail" class="form-label">Email address</label>
-                        <input type="email" name="email" class="form-control" id="InputForEmail" value="<?= set_value('email') ?>">
-                    </div>
-                    <div class="mb-3">
-                        <label for="InputForPassword" class="form-label">Password</label>
-                        <input type="password" name="password" class="form-control" id="InputForPassword">
-                    </div>
-                    <div class="mb-3">
-                        <label for="InputForConfPassword" class="form-label">Confirm Password</label>
-                        <input type="password" name="confpassword" class="form-control" id="InputForConfPassword">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Register</button>
+                  <div class="mb-3">
+                    <label for="InputForName" class="form-label">Name</label>
+                    <input type="text" name="name" class="form-control" id="InputForName" value="<?= set_value('name') ?>">
+                  </div>
+                  <div class="mb-3">
+                    <label for="InputForEmail" class="form-label">Email address</label>
+                    <input type="email" name="email" class="form-control" id="InputForEmail" value="<?= set_value('email') ?>">
+                  </div>
+                  <div class="mb-3">
+                    <label for="InputForPassword" class="form-label">Password</label>
+                    <input type="password" name="password" class="form-control" id="InputForPassword">
+                  </div>
+                  <div class="mb-3">
+                    <label for="InputForConfPassword" class="form-label">Confirm Password</label>
+                    <input type="password" name="confpassword" class="form-control" id="InputForConfPassword">
+                  </div>
+                  <button type="submit" class="btn btn-outline-light btn-lg px-5">Register</button>
+                  <div>
+                  <p class="mb-0 mt-2">You already have one? <a href="/login" class="text-white-50 fw-bold">Sign In</a></p>
+                </div>
                 </form>
+
+              </div>
             </div>
-            
+          </div>
         </div>
-    </div>
+      </div>
+    </section>
     
     <!-- Popper.js first, then Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

@@ -30,8 +30,18 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/login', 'Login::index');
+$routes->get('/bc', 'BankController::index');
+$routes->post('/dep', 'BankController::deposit');
+$routes->get('/', 'Login::index');
+$routes->get('/login/auth', 'Login::auth');
 $routes->get('/register','Register::index');
+$routes->get('/deposit', 'Deposit::index');
+$routes->post('/deposit/process', 'Deposit::process');
+$routes->get('/withdraw', 'WithdrawController::index');
+$routes->post('/withdraw/process', 'WithdrawController::process');
+$routes->get('/loan','LoanController::index');
+$routes->post('/loan/process', 'LoanController::process');
+$routes->get('/logout', 'login::index');
 $routes->get('/dashboard', 'Dashboard::index',['filter' => 'auth']);
 
 /**
