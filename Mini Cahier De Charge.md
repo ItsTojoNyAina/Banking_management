@@ -1,12 +1,4 @@
-Cher Monsieur,
 
-Durant ce projet, j'ai rencontré plusieurs problèmes, notamment en ce qui concerne la connexion de mon code à la base de données. J'ai réalisé que je n'avais pas correctement vérifié ce que j'avais écrit dans mon fichier .env. Cela m'a pris presque deux heures, avec beaucoup de stress, pour comprendre que je devais simplement remplacer localhost par 127.0.0.1, et cela a résolu le problème.
-
-J'ai également rencontré des difficultés avec la gestion des routes. Parfois, j'oubliais de les définir, et d'autres fois, je les écrivais de manière incorrecte, ce qui entraînait des erreurs affichées sur l'interface.
-
-Malgré ces difficultés, ce projet m'a permis de développer mes compétences et d'améliorer mes capacités techniques. Il m'a offert une opportunité précieuse pour renforcer mes connaissances en gestion des bases de données et en configuration des routes.
-
-Cahier des charges du projet :
 
     Objectif : Développer un système de gestion de compte bancaire avec les fonctionnalités suivantes :
        Inscription , Connexion et déconnexion des utilisateurs
@@ -31,4 +23,3 @@ Cahier des charges du projet :
         Validation des entrées : Vérification des données soumises par les utilisateurs pour garantir leur validité.
         Gestion des erreurs : Mise en place d'une gestion efficace des erreurs pour une meilleure expérience utilisateur.
 
-En conclusion, bien que le projet ait présenté plusieurs défis, il m'a permis de renforcer mes compétences techniques et de mieux comprendre les aspects pratiques du développement d'applications web.
